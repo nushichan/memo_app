@@ -19,9 +19,6 @@ class MemoSeeder extends Seeder
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
-    }
-}
-
         # paramに配列を代入
         $param = [
             [
@@ -39,3 +36,6 @@ class MemoSeeder extends Seeder
         ];
         # DB::table->insertでレコードの登録
         DB::table('memos')->insert($param);
+    }
+}
+
